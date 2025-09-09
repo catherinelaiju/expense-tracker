@@ -1,0 +1,61 @@
+/* Budget card container */
+.budget-card {
+  background: #ffffff;
+  color: #111111;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Title */
+.budget-card h2 {
+  color: #111111;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Input field */
+.budget-card input {
+  padding: 8px 12px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  width: 80%;
+  background: #fafafa;
+  color: #111;
+  font-size: 14px;
+}
+
+/* Progress bar container */
+.progress-bar {
+  background: #e5e7eb;
+  height: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 14px 0;
+}
+
+/* Fill of the progress bar */
+.progress-fill {
+  height: 100%;
+  background: #111; /* elegant black fill */
+  transition: width 0.4s ease;
+}
+
+/* Over budget = red accent */
+.progress-fill.over-budget {
+  background: #b91c1c;
+}
+
+/* Small text */
+.budget-card p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}

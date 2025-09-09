@@ -1,0 +1,60 @@
+.expense-card {
+  background: #1e1e1e;  /* Match dark theme */
+  color: #ffffff;
+  margin: 12px 0;
+  padding: 14px 18px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  font-family: "Poppins", sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.expense-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+}
+
+.expense-amount {
+  font-size: 1rem;
+  font-weight: 600;
+  background: #111; /* darker for consistency */
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-right: 12px;
+  min-width: 70px;
+  text-align: center;
+}
+
+.delete-btn {
+  background: #f76c5e;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #d84e41;
+}
+.expense-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.expense-category {
+  font-size: 0.8rem;
+  color: #f9b17a;
+}
+
+.expense-date {
+  font-size: 0.75rem;
+  color: #aaa;
+}
