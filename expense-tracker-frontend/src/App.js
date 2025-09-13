@@ -27,7 +27,7 @@ function App() {
 
   /* ----------------- Load from backend ----------------- */
   useEffect(() => {
-    fetch("http://localhost:5000/expenses")
+    fetch("https://expense-tracker-backend-4jxt.onrender.com/expenses")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch expenses");
         return res.json();
@@ -41,7 +41,7 @@ function App() {
   /* ----------------- Handlers ----------------- */
   const addExpense = async (expense) => {
     try {
-      const response = await fetch("http://localhost:5000/expenses", {
+      const response = await fetch("https://expense-tracker-backend-4jxt.onrender.com/expenses", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(expense),
@@ -58,7 +58,7 @@ function App() {
 
   const deleteExpense = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/expenses/${id}`, {
+      const response = await fetch(`https://expense-tracker-backend-4jxt.onrender.com/expenses/${id}`, {
         method: "DELETE",
       });
 
@@ -73,7 +73,7 @@ function App() {
     try {
       await Promise.all(
         expenses.map((e) =>
-          fetch(`http://localhost:5000/expenses/${e.id}`, { method: "DELETE" })
+          fetch(`https://expense-tracker-backend-4jxt.onrender.com/expenses/${e.id}`, { method: "DELETE" })
         )
       );
       setExpenses([]);
